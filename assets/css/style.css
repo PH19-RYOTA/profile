@@ -1,0 +1,239 @@
+/* 全体 */
+body {
+    background-color: #ffffff; /* 白 */
+    color: #000000; /* 黒 */
+}
+
+a {
+    color: #000000; /* 黒 */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333333; /* 濃い黒 */
+}
+
+/* ヘッダー */
+header h1{
+    background-color: #ffffff; /* 白 */
+    padding-left: 70px;
+}
+
+header nav ul {
+    display: flex; /* flexbox レイアウトを使用 */
+    justify-content: space-between; /* アイテムを左右に均等に配置 */
+    align-items: center; /* アイテムを垂直方向に中央揃え */
+    list-style: none; /* デフォルトのリストスタイルを解除 */
+    margin: 0; /* 余白を0に */
+    padding: 0; /* 余白を0に */
+}
+
+header nav ul {
+    overflow: hidden; /* float を使用するために必要 */
+}
+  
+header nav ul li {
+    float: left; /* アイテムを左に配置 */
+    margin: 0 10px; /* アイテム間の余白 */
+}
+  
+header nav ul li {
+    margin: 0 10px; /* アイテム間の余白 */
+}
+  
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem; /* ロゴのフォントサイズ */
+    font-weight: bold; /* ロゴの太字 */
+    color: #000000; /* 黒 */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    font-size: 1.2rem; /* ナビゲーションリンクのフォントサイズ */
+    color: #000000; /* 黒 */
+}
+
+/* Aboutセクション */
+#about {
+    padding: 20px;
+}
+
+#about h2 {
+    font-size: 2.5rem; /* 見出しのフォントサイズ */
+    margin-bottom: 20px; /* 見出しと本文の間隔 */
+    color: #000000; /* 黒 */
+}
+
+#about p {
+    font-size: 1.2rem; /* 本文のフォントサイズ */
+    line-height: 1.5; /* 行間 */
+    color: #000000; /* 黒 */
+}
+
+/* Skillsセクション */
+#skills {
+    background-color: #ffffff; /* 白 */
+    padding: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    width: 300px; /* スキルアイテムの幅 */
+    margin-bottom: 20px; /* スキルアイテムの間隔 */
+}
+
+.skill-item h3 {
+    font-size: 1.5rem; /* スキル名のフォントサイズ */
+    margin-bottom: 10px; /* スキル名とプログレスバーの間隔 */
+    color: #000000; /* 黒 */
+}
+
+.list-unstyled{
+    text-align: left;
+}
+
+.progress-bar {
+    background-color: #000; /* プログレスバーの背景色（グレーの代替） */
+    height: 10px; /* プログレスバーの高さ */
+}
+
+/* Progress Bar (続き) */
+.progress-bar.skill-html {
+    width: 80%; /* HTMLのプログレスバーの幅 */
+    background-color: #333333; /* 黒 */
+}
+
+.progress-bar.skill-css {
+    width: 70%; /* CSSのプログレスバーの幅 */
+    background-color: #333333; /* 黒 */
+}
+
+.progress-bar.skill-javascript {
+    width: 60%; /* JavaScriptのプログレスバーの幅 */
+    background-color: #333333; /* 黒 */
+}
+
+/* Workセクション */
+/* Workセクション */
+#work {
+    background-color: #ffffff; /* 白 */
+    padding: 20px;
+}
+
+.work-gallery {
+    display: flex; /* flexboxレイアウトを使用 */
+    flex-wrap: nowrap; /* アイテムを折り返さない */
+    overflow-x: auto; /* 横スクロールバーを表示 */
+    margin: 0 -20px; /* 余白を調整 */
+}
+
+.work-item {
+    flex: 0 0 300px; /* アイテムの幅を固定 */
+    margin: 0 20px; /* アイテム間の余白 */
+    border: 1px solid #cccccc; /* アイテムの境界線 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* アイテムの影 */
+}
+
+.work-item img {
+    width: 100%; /* 画像の幅を100%に */
+    height: 200px; /* 画像の高さ */
+    object-fit: cover; /* 画像を容器いっぱいに表示 */
+}
+
+.work-item .work-caption {
+    text-align: center; /* キャプションを中央揃え */
+    padding: 10px;
+    background-color: #f5f5f5; /* キャプションの背景色（グレーの代替） */
+}
+
+.work-item .work-caption h3 {
+    font-size: 1.4rem; /* 作品タイトルのフォントサイズ */
+    margin-bottom: 10px; /* 作品タイトルと説明文の間隔 */
+    color: #000000; /* 黒 */
+}
+
+.work-item .work-caption p {
+    font-size: 1rem; /* 説明文のフォントサイズ */
+    line-height: 1.5; /* 行間 */
+    color: #000000; /* 黒 */
+}
+
+.work-item .work-caption a {
+    background-color: #000000; /* 黒 */
+    border-color: #000000; /* 黒 */
+}
+
+/* Contactセクション */
+#contact {
+    background-color: #ffffff; /* 白 */
+    padding: 20px;
+}
+
+.contact-form {
+    max-width: 500px; /* フォームの幅 */
+    margin: 0 auto; /* フォームを中央揃え */
+}
+
+.contact-form label {
+    display: block; /* ラベルをブロック要素で表示 */
+    margin-bottom: 5px; /* ラベルと入力欄の間隔 */
+    color: #000000; /* 黒 */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* 入力欄とテキストエリアの幅 */
+    padding: 8px; /* 余白 */
+    border: 1px solid #cccccc; /* 境界線 */
+    box-sizing: border-box; /* ボックスモデル */
+}
+
+.contact-form textarea {
+    height: 150px; /* テキストエリアの高さ */
+}
+
+.contact-form button {
+    background-color: #000000; /* 黒 */
+}
+
+footer p{
+    text-align: center;
+}
+
+/* メディアクエリ（スマホ向け） */
+@media (max-width: 768px) {
+    .work-gallery {
+        flex-direction: column; /* スマホの場合は縦スクロール */
+        flex-wrap: wrap; /* アイテムを折り返す */
+        margin: 0;
+    }
+
+    .work-item {
+        flex: 1 0 100%; /* アイテムの幅を100%に */
+        margin: 0 10px; /* アイテム間の余白 */
+        border: none; /* スマホの場合は境界線を非表示 */
+        box-shadow: none; /* スマホの場合は影を非表示 */
+    }
+
+    .work-item img {
+        height: 200px; /* 画像の高さ */
+    }
+}
